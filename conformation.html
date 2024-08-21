@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCC Conformation</title>
+</head>
+<body>
+    <style>
+        body {
+            font-family: 'Arial', Helvetica, sans-serif;
+            background-color: #222222;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+        #tsk {
+            text-align: center;
+        }
+        .spinner {
+          width: 20px;
+          height: 20px;
+          color: blue;
+          border: transparent;
+          border-top : 10px solid blue;
+          border-bottom: 10px solid white;
+          border-radius: 60%;
+          animation: spin 2s linear infinite;
+          margin: 30px auto;
+        }
+      #red {
+        text-align: center;
+        margin: 50px auto;
+      }
+        @keyframes spin {
+          0% {
+            transform : rotate(360deg);
+          }
+          100% {
+            transorm: rotate(360deg);
+          }
+        }
+        .content  {
+          display: flex;
+          flex-direction: column;
+        }
+    </style>
+      
+        <div class="spinner"></div>
+    
+        <div class="massage">
+            <p id="tsk">Thank you for choosing Oasis Car Center. We are looking forward to making your car shine!</p>
+            <p id="red">Redirecting....</p>
+      </div>
+  </div>
+
+    <script>
+        setTimeout(function(){
+            window.location.href = "index.html";
+        }, 5000);
+    </script>
+</body>
+</html>

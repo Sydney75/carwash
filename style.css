@@ -1,0 +1,239 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Arial', Helvetica, sans-serif;
+    background-color: #222222;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    background-color: #111111;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 7px;
+    position: sticky;
+    top: 0;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.logo h3 {
+    color: #00C1D4;
+    margin: 0;
+}
+
+.links a {
+    text-decoration: none;
+    color: hsla(0, 0%, 80%, 0.789);
+    padding: 0 20px;
+    transition: color 0.5s ease;
+}
+
+.links a:hover,
+#selected {
+    color: #ffffff;
+}
+
+.book button {
+    padding: 10px;
+    border-radius: 10px;
+    width: 100px;
+    background-color: hsla(0, 0%, 80%, 0.789);
+    transition: all 0.5s ease;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+}
+
+.book button:hover {
+    background-color: #00C1D4;
+    color: #ffffff;
+}
+
+#head1, 
+#head2, 
+#head3,
+#head4 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2em;
+    color: #00C1D4;
+}
+
+.fieldsets {
+    display: grid;
+    place-items: center;
+    margin: 30px;
+    background-color: #333333;
+    border-radius: 15px;
+    width: 200px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.fieldsets:hover {
+    transform: translateY(-10px);
+}
+
+.fieldsets ul {
+    list-style: none;
+    padding: 0;
+}
+
+.fieldsets li {
+    margin: 10px 0;
+}
+
+.click button {
+    padding: 10px;
+    border-radius: 10px;
+    width: 120px;
+    background-color: hsla(0, 0%, 80%, 0.789);
+    transition: all 0.5s ease;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+}
+
+.click button:hover {
+    background-color: #00C1D4;
+    color: #ffffff;
+}
+
+legend h3 {
+    margin: 0;
+}
+
+footer {
+    background-color: #111111;
+    padding: 20px 0;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.side {
+    margin: 20px;
+}
+.footer .sc {
+    display: flex;
+}
+.side h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.side li {
+    list-style: none;
+    margin: 5px 0;
+}
+.side .sc li i {
+    font-size: 35px;
+    transition: color 0.5s ease-in-out;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.side .sc li i:hover {
+    color: #00C1D4;
+}
+
+.cont li,
+.cont i {
+    display: inline-flex;
+    margin: 5px 0;
+}
+
+.support li a {
+    color: hsla(0, 0%, 80%, 0.789);
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+
+.support li a:hover {
+    color: white;
+}
+
+.lines {
+    margin: 20px auto;
+    width: 80%;
+}
+
+#last {
+    font-size: 10px;
+    margin-top: 20px;
+}
+
+.dd {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.home h2 {
+    margin: 0;
+    color: #00C1D4;
+}
+.home h2 {
+    margin-left: 10px;
+}
+marquee {
+    padding: 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .book button {
+        margin: 5px;
+    }
+    .links a {
+        padding: 10px 3px;
+        margin: 2px;
+        display: none;
+    }
+    .fieldsets {
+        margin: 15px;
+        padding: 15px;
+    }
+    .footer {
+        flex-direction: column;
+    }
+    .footer .sc {
+        justify-content: center;
+    }
+    .logo  i {
+        display: flex;
+        color: white;
+        font-size: 50 px;
+        cursor: pointer;
+    }
+
+    
+}
+.cancel {
+    text-decoration: line-through;
+    color: black;
+}
+#pm {
+    color: #00C1D4;
+}
+.price {
+     color: #00C1D4;
+}
+#wapp:hover {
+    color:green;
+}
+#fb:hover {
+    color: blue;
+}
+

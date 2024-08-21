@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oasis Car Center Book</title>
+    <link rel="shortcut icon" href="apple-touch-icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="android-chrome-192x192.png" type="image/x-icon">
+    <link rel="shortcut icon" href="android-chrome-512x512.png" type="image/x-icon">
+</head>
+<body>
+    <style>
+        body {
+            font-family: 'Arial', Helvetica, sans-serif;
+            background-color: #222222;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #member1 {
+            cursor: not-allowed;
+        }
+        select {
+            padding: 1em;
+            border-radius: 3px;
+            background-color: #333333;
+            color: white;
+        }
+        h2 {
+            text-align: center;
+            color: #00C1D4;;
+        }
+        .click button {
+            padding: 10px;
+            border-radius: 10px;
+            width: 120px;
+            background-color: hsla(0, 0%, 80%, 0.789);
+            transition: all 0.5s ease;
+            cursor: pointer;
+            border: none;
+            font-weight: bold;
+        }
+
+        .click button:hover {
+            background-color: #00C1D4;
+            color: #ffffff;
+        }
+        .click {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .info {
+            display: flex;
+            flex-direction: column;
+        }
+        input {
+            border: none;
+            outline: none;
+            border-radius: 15px;
+            padding: 1em;
+            background-color:hsla(0, 0%, 80%, 0.789);
+            transition: 300ms ease-in-out;
+        }
+        input:focus {
+            background-color: white;
+            transform: scale(1.05);
+        }
+        .info input {
+            margin: 15px;
+        }
+        .payment {
+            display: flex;
+            justify-content: center;
+        }
+        .cash , .card {
+            margin: 10px;
+        }
+        .payment input {
+            cursor: pointer;
+        }
+        #time,
+        #date {
+            cursor: pointer;
+        }
+        #terms {
+            cursor: pointer;
+        }
+        #tt {
+            color:#00C1D4;
+            transition: 0.5s;
+        }
+        #tt:hover {
+            color: white;
+        }
+        a i {
+            color: blue;
+            font-size: 30px;
+        }
+        #member1:hover {
+            cursor: not-allowed;
+        }
+    </style>
+    <a href="booking.html"><i class='bx bx-arrow-back'></i></a>
+
+    <form action="conformation.html" id="contactForm" method="post">
+        <h2>Bookings</h2>
+
+        <div class="info">
+            <label for="options">Select your service below :</label> <br>
+            <select name="options" id="options">
+                <option value="Deluxe">Deluxe (R100)</option>
+                <option value="Ultimate">Ultimate (R150)</option>
+                <option value="Home-Call" selected>Home Call (R200)</option>
+                <option value="Membership" id="member1" disabled>Membership</option>
+            </select>
+        </div>
+        <div class="info">
+            <input type="text" id="name" name="Name" autocomplete="on" placeholder="Name" required>
+            <input type="tel" name="Number" id="number" autocomplete="on" placeholder="Number Phone" pattern="[0-9]{10}" required>
+            <input type="date" name="Date" id="date">
+            <input type="time" name="Time" id="time" placeholder="Time">
+        </div>
+
+        <div class="payment">
+            <div class="cash">
+                <input type="radio" name="payment_method" value="Cash" id="cash" required>
+                <label for="cash">Cash</label>
+            </div>
+            <div class="card">
+                <input type="radio" name="payment_method" value="Card" id="card" >
+                <label for="card">Card</label>
+            </div>
+        </div>
+
+        <div class="terms_conditions">
+            <input type="checkbox" name="terms&conditions" id="terms" required>
+            <label for="terms">AGREE to our <a href="terms&condition.html" id="tt">Terms & Conditions</a></label>
+        </div>
+        
+        <div class="click">
+            <button type="submit" onclick="massage()">Book</button>
+        </div>
+
+    </form>
+    
+    <script src="java.js"></script>
+    </body>
+</html>

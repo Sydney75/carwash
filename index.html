@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oasis Car Center Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>  
+    <link rel="shortcut icon" href="apple-touch-icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="android-chrome-192x192.png" type="image/x-icon">
+    <link rel="shortcut icon" href="android-chrome-512x512.png" type="image/x-icon">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <h3>OCC</h3>
+        </div>
+        
+        <div class="links">
+            <a href="index.html" id="selected">Home</a>
+            <a href="#head1">Services</a>
+            <a href="#head2">About</a>
+            <a href="#head5">Contact</a>
+        </div>
+        <div class="book">
+            <button onclick="location.href='booking.html'">Book</button>
+        </div>
+    </div>
+    <br>
+    
+    <section class="home">
+        <h2>Welcome to Oasis Car Center</h2><br>
+
+        <marquee behavior="alternate" scrollamount="5S" scrolldelay="100" direction="right" loop="infinite">
+            <p>Your premier destination for top-quality car wash and detailing services.</p>
+        </marquee>
+    </section>
+    <br>
+
+    <h2 id="head1">Services</h2>
+    <div class="dd">
+        <div class="fieldsets">
+            <fieldset class="deluxe">
+                <legend><h3>Deluxe</h3></legend>
+                <ul>
+                    <li>Interior & Exterior wash</li>
+                    <li>Tire shining</li>
+                    <li>Air Freshener</li>
+                    <li>Dashboard cleaning</li>
+                </ul>
+                <div class="price">
+                    <p id="pm">R100</p>
+                </div>
+                <div class="click">
+                    <button onclick="location.href='booking.html'">Book</button>
+                </div>
+            </fieldset>
+        </div>
+
+        <div class="fieldsets">
+            <fieldset class="ultimate">
+                <legend><h3>Ultimate Wash</h3></legend>
+                <ul>
+                    <li>All Deluxe services</li>
+                    <li>Engine cleaning</li>
+                    <li>Protection</li>
+                    <li>Detailing</li>
+                </ul>
+                <div class="price">
+                    <span class="cancel">R180</span>  R150
+                </div><br>
+                <div class="click">
+                    <button onclick="location.href='booking.html'">Book</button>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+
+    <div class="dd">
+        <div class="fieldsets">
+            <fieldset class="homecall">
+                <legend><h3>Home Call</h3></legend>
+                <ul>
+                    <li>All Premium services</li>
+                    <li>Priority scheduling</li>
+                </ul>
+                <div class="price">
+                    <p id="pm">R200</p>
+                </div>
+                <div class="click">
+                    <button onclick="location.href='booking.html'">Book</button>
+                </div>
+            </fieldset>
+        </div>
+
+        <div class="fieldsets">
+            <fieldset class="member">
+                <legend><h3>Membership</h3></legend>
+                <ul>
+                    <li> All Premium services</li>
+                    <li>Priority scheduling</li>
+                    <li>50% off first month</li>
+                    <li>Weekly service</li>
+                </ul>
+                <div class="price">
+                   <p id="pm">R500 per month</p>
+                </div>
+                <br>
+                <div class="click">
+                    <button onclick="location.href='booking.html'">Buy</button>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+
+    <h2 id="head2">About Us</h2>
+    <br>
+    <div class="lines">
+        <p>Welcome to Oasis Car Center, where your car's shine is our passion! At AquaLuxe, we believe that a clean car is more than just a luxury—it's a necessity. Our mission is to provide top-quality car wash services that leave your vehicle looking immaculate and protected from the elements.</p>
+    </div>
+    <br>
+
+    <h2 id="head3">Our Story</h2>
+    <br>
+    <div class="lines">
+        <p>Oasis Car Center was founded by Mr. Sydney Munasi with a simple idea in mind: to offer the best car wash experience possible. We understand that your car is an extension of yourself, and we are dedicated to treating</p>
+    </div>
+
+    <h2 id="head4">FAQ's</h2>
+    <br>
+    <div class="lines">
+        <details id="det">
+            <summary>How to book</summary><br>
+                <p>
+                    To book, either click the button on the top right corner of page, or below service categories you are interseted in. You can select either home or our wash station and an email and sms for verification will be sent after booking is processed which usully takes minutes.
+                </p>
+        </details><br>
+        
+        <details id="det">
+            <summary>What payments are accepted?</summary> <br>
+                <p>
+                    Cash and cards are accepted. When you choose to book whith card, our team will come with a card machine to your choosen location
+                </p>
+        </details><br>
+
+        <details id="det">
+            <summary>How long does the car wash take?</summary><br>
+                <p>
+                    The car wash usually takes 1hour to 2hours depending on the type of service choosen.
+                </p>
+        </details><br>
+        
+        <details id="det">
+            <summary>What is home call?</summary><br>
+                <p>
+                    Our Home Call Car Wash Service brings professional car cleaning to your location. Whether you're at home or work, our mobile unit will come to you and provide the same high-quality services you'd receive at our facility.
+                </p>
+        </details><br>    
+
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="side">
+                <h3>Socials</h3>
+                    <div class="sc">
+                        <li><i class='bx bxl-facebook-circle' id="fb" ></i></li>
+                        <li><i class='bx bxl-whatsapp' id="wapp"></i></li>
+                        <li><i class='bx bxl-telegram' id="tel"></i></li>
+                    </div>
+            </div>
+        
+            <div class="side">
+                <h3>Location</h3>
+                    <li>12 Thyme Street</li>
+                    <li>IvyPark ext 17</li>
+                    <li>Polokwane</li>
+                    <li>0699</li>
+            </div>
+
+            <div class="side">
+                <h3>Contact</h3>
+                    <div class="cont">
+                        <li> 0646702205</li>
+                    </div>
+
+                    <div class="cont">
+                        <li>info@oasiscc.co.za</li>
+                    </div>
+            </div>
+        
+            <div class="side">
+                <h3 id="head5">Support</h3>
+                    <div class="support">
+                        <li><a href="#chat">Chat online</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#test">Reviews</a></li>
+                        <li><a href="terms2.html">Terms & Conditions</a></li>
+                    </div>
+            </div>
+        </div>
+
+        <p id="last">&copy 2024 Oasis Car Center. All Rights Reserved.</p>
+
+    </footer>
+    
+    
+
+</body>
+</html>
